@@ -1,7 +1,7 @@
 {
-  "name": "static-site",
+  "name": "readmegen",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple readme generator to efficiently produce consistent and informative readme documentation for your git hub projects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
