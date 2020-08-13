@@ -2,7 +2,11 @@
 
 > A simple readme generator to efficiently produce consistent and informative readme documentation for your github projects.
 
-<img src="assets/City Temps.png" style="height:250px">
+THIS:  
+<img src="assets/README.gif" style="height:250px">  
+
+PRODUCED THIS :sparkles::  
+<img src="assets/Sample README.png" style="height:250px">
 
 ## Table of Contents
 1. [About this project](#about)
