@@ -14,7 +14,7 @@ function promptUser(){
             type: "input",
             message: "What is the title of your project?",
             name: "title",
-            default: "Project Title"
+            default: "Project_Title"
         },
         {
             type: "input",
@@ -25,24 +25,27 @@ function promptUser(){
         {
             type: "input",
             message: "Installation instructions:",
-            name: "installation",
+            name: "install",
+            default: "You will only need an active browser to view this portfolio correctly. No installations requried! :+1:"
         },
         {
             type: "input",
             message: "Usage information:",
             name: "usage", 
+            default: "No specifics."
         },
         {
             type: "list",
             message: "How is your project licensed?",
-            choices: ["Apache", "GNU GPLv3", "MIT", "Mozilla Public License 2.0", "Unlicensed"],
-            name: "license"
+            choices: ["Apache", "GNU GPLv3", "MIT", "Mozilla Public 2.0"],
+            name: "license",
+            default: "MIT"
         },
         {
             type: "input",
             message: "Contributing guidelines:",
             name: "contributing",
-            default: "Please fork the repo and open a pull request to make contribution suggestions."
+            default: "Feel free to fork this repository, and open a pull request to suggest changes. Please provide a short note on your updates and/or additions!"
         },
         {
             type: "input",
@@ -52,12 +55,14 @@ function promptUser(){
         {
             type: "input",
             message: "Enter your github username:",
-            name: "questionsUserName"
+            name: "questionsUserName",
+            default: "hihellos"
         },
         {
             type: "input",
             message:"Enter your email:",
-            name: "questionsEmail"
+            name: "questionsEmail",
+            default: "hihellos@github.com"
         },
     ]);
 }
@@ -77,10 +82,6 @@ promptUser()
     });
 
 
-
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
 
 // // function to initialize program
 // function init() {
