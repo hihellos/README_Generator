@@ -32,7 +32,8 @@ function generateMarkdown(content) {
   For any additional questions or other interests in this project, please contact me at:  
   github.com/${content.questionsUserName}  
   or  
-  ${content.questionsEmail}
+  ${content.questionsEmail}  
+  :woman_technologist:
 `;
 }
 
