@@ -37,7 +37,7 @@ function promptUser(){
         {
             type: "list",
             message: "How is your project licensed?",
-            choices: ["Apache", "GNU GPLv3", "MIT", "Mozilla Public 2.0"],
+            choices: ["Apache", "GPLv3", "MIT", "MozillaPublic2.0"],
             name: "license",
             default: "MIT"
         },
@@ -70,6 +70,19 @@ function promptUser(){
 promptUser()
     .then(function(content) {
     console.log("this is our content: ", content);
+    if (content.license === "Apache") {
+        content.badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
+    if (content.license === "GPLv3") {
+        content.badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    }
+    if (content.license === "MIT") {
+        content.badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" 
+    }
+    if (content.license === "MPL2.0") {
+        content.badge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    }
+
     const readme = generateMarkdown(content);
 
     return writeFileAsync(`README_${content.title}.md`, readme);

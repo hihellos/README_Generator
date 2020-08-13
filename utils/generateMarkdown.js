@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(content) {
-  return `# ${content.title}
-
+  return `# ${content.title} <div align="right">${content.badge}</div>
+  
   ## Description
   > ${content.description}
 
